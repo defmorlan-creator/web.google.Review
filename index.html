@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Review Card Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="brandTitle">Google Review Card Pro</h1>
+    <p>Buat QR Code Google Review untuk bisnis Anda</p>
+  </header>
+
+  <main class="container">
+
+    <section class="form-section">
+      <h2>Informasi Toko</h2>
+
+      <form id="reviewForm">
+
+        <label>Nama Toko</label>
+        <input type="text" id="storeName"
+          placeholder="Contoh: Toko Morlan" required>
+
+        <label>Alamat / Lokasi Toko</label>
+        <textarea id="storeAddress"
+          placeholder="Masukkan alamat lengkap toko"
+          required></textarea>
+
+        <label>Kategori Bisnis</label>
+        <select id="storeCategory" required>
+          <option value="">Pilih kategori</option>
+          <option>Restoran</option>
+          <option>Kafe</option>
+          <option>Salon</option>
+          <option>Toko Pakaian</option>
+          <option>Minimarket</option>
+          <option>Bengkel</option>
+          <option>Jasa</option>
+          <option>Lainnya</option>
+        </select>
+
+        <label>Nomor WhatsApp</label>
+        <input type="tel" id="storePhone"
+          placeholder="Contoh: 628123456789">
+
+        <label>Link Google Review</label>
+        <input type="url" id="reviewLink"
+          placeholder="Tempel link Google Review di sini"
+          required>
+
+        <button type="submit">BUAT QR CODE</button>
+
+      </form>
+    </section>
+
+    <section class="result-section">
+      <h2>Hasil Google Review Card</h2>
+
+      <div class="review-card" id="reviewCard">
+
+        <h2 id="resultName">Nama Toko Anda</h2>
+
+        <p id="resultCategory">Kategori Bisnis</p>
+
+        <div id="qrcode">
+          QR Code akan muncul di sini
+        </div>
+
+        <h3>SCAN UNTUK REVIEW</h3>
+
+        <p id="resultAddress">
+          Alamat toko akan muncul di sini
+        </p>
+
+        <p id="resultPhone"></p>
+
+        <p class="thankyou">
+          Terima kasih telah mempercayai kami!
+        </p>
+
+      </div>
+
+      <button id="downloadBtn" disabled>
+        DOWNLOAD QR CODE
+      </button>
+
+      <p id="message"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Google Review Card Pro © 2026</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

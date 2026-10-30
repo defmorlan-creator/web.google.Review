@@ -1,0 +1,151 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef3f7;
+  color: #142b45;
+}
+
+header {
+  background: #102b46;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.form-section,
+.result-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #00000012;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd5df;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  background: #12a99b;
+  color: white;
+  border: none;
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #087f77;
+}
+
+button:disabled {
+  background: #9aa9b5;
+  cursor: not-allowed;
+}
+
+.review-card {
+  background: #102b46;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  border-radius: 12px;
+  min-height: 350px;
+}
+
+.review-card h2 {
+  color: #46d5c5;
+  margin-bottom: 8px;
+}
+
+.review-card h3 {
+  color: #46d5c5;
+  margin: 15px 0;
+}
+
+#qrcode {
+  background: white;
+  width: 180px;
+  height: 180px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 5px;
+  color: #333;
+}
+
+#qrcode canvas,
+#qrcode img {
+  max-width: 100%;
+  height: auto;
+}
+
+.review-card p {
+  overflow-wrap: anywhere;
+  margin: 8px 0;
+}
+
+.thankyou {
+  margin-top: 20px !important;
+  color: #46d5c5;
+}
+
+#message {
+  margin-top: 15px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #637487;
+}
+
+@media (max-width: 750px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
